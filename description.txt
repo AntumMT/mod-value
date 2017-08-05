@@ -1,0 +1,1 @@
+Adds a monetary value system to items.
