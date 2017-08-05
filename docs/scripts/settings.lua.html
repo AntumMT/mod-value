@@ -1,0 +1,484 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>Value mod for Minetest</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>Value</h1>
+
+<ul>
+  <li><a href="../api.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Settings">Settings</a></li>
+</ul>
+
+
+<h2>Scripts</h2>
+<ul class="nowrap">
+  <li><a href="../scripts/api.lua.html">api.lua</a></li>
+  <li><a href="../scripts/init.lua.html">init.lua</a></li>
+  <li><a href="../scripts/init.lua.html">init.lua</a></li>
+  <li><a href="../scripts/money.lua.html">money.lua</a></li>
+  <li><strong>settings.lua</strong></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Script <code>settings.lua</code></h1>
+<p><strong><em>value</em></strong> mod configuration settings.</p>
+<p></p>
+
+
+<h2><a href="#Settings">Settings</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#value.resell_divisor">value.resell_divisor</a></td>
+	<td class="summary">Sets the number at which item value should be divided to get resell value.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#value.enable_ones">value.enable_ones</a></td>
+	<td class="summary">Enables money of value 1.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#value.enable_fives">value.enable_fives</a></td>
+	<td class="summary">Enables money of value 5.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#value.enable_tens">value.enable_tens</a></td>
+	<td class="summary">Enables money of value 10.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#value.enable_twenties">value.enable_twenties</a></td>
+	<td class="summary">Enables money of value 20.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#value.enable_fifties">value.enable_fifties</a></td>
+	<td class="summary">Enables money of value 50.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#value.enable_hundreds">value.enable_hundreds</a></td>
+	<td class="summary">Enables money of value 100.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#value.enable_thousands">value.enable_thousands</a></td>
+	<td class="summary">Enables money of value 1000.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#value.money_ones">value.money_ones</a></td>
+	<td class="summary">Item used for money of value 1.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#value.money_fives">value.money_fives</a></td>
+	<td class="summary">Item used for money of value 5.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#value.money_tens">value.money_tens</a></td>
+	<td class="summary">Item used for money of value 10.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#value.money_twenties">value.money_twenties</a></td>
+	<td class="summary">Item used for money of value 20.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#value.money_fifties">value.money_fifties</a></td>
+	<td class="summary">Item used for money of value 50.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#value.money_hundreds">value.money_hundreds</a></td>
+	<td class="summary">Item used for money of value 100.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#value.money_thousands">value.money_thousands</a></td>
+	<td class="summary">Item used for money of value 1000.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2><a name="Settings"></a>Settings</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "value.resell_divisor"></a>
+    <strong>value.resell_divisor</strong>
+    </dt>
+    <dd>
+    Sets the number at which item value should be divided to get resell value.
+
+    </ul>
+    <h3>Type:</h3>
+    <ul>
+         <i>integer</i>
+    </ul>
+    <h3>Default:</h3>
+    <ul>
+         <i>2</i>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "value.enable_ones"></a>
+    <strong>value.enable_ones</strong>
+    </dt>
+    <dd>
+    Enables money of value 1.
+
+    </ul>
+    <h3>Type:</h3>
+    <ul>
+         <i>bool</i>
+    </ul>
+    <h3>Default:</h3>
+    <ul>
+         <i>true</i>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "value.enable_fives"></a>
+    <strong>value.enable_fives</strong>
+    </dt>
+    <dd>
+    Enables money of value 5.
+
+    </ul>
+    <h3>Type:</h3>
+    <ul>
+         <i>bool</i>
+    </ul>
+    <h3>Default:</h3>
+    <ul>
+         <i>true</i>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "value.enable_tens"></a>
+    <strong>value.enable_tens</strong>
+    </dt>
+    <dd>
+    Enables money of value 10.
+
+    </ul>
+    <h3>Type:</h3>
+    <ul>
+         <i>bool</i>
+    </ul>
+    <h3>Default:</h3>
+    <ul>
+         <i>true</i>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "value.enable_twenties"></a>
+    <strong>value.enable_twenties</strong>
+    </dt>
+    <dd>
+    Enables money of value 20.
+
+    </ul>
+    <h3>Type:</h3>
+    <ul>
+         <i>bool</i>
+    </ul>
+    <h3>Default:</h3>
+    <ul>
+         <i>false</i>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "value.enable_fifties"></a>
+    <strong>value.enable_fifties</strong>
+    </dt>
+    <dd>
+    Enables money of value 50.
+
+    </ul>
+    <h3>Type:</h3>
+    <ul>
+         <i>bool</i>
+    </ul>
+    <h3>Default:</h3>
+    <ul>
+         <i>false</i>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "value.enable_hundreds"></a>
+    <strong>value.enable_hundreds</strong>
+    </dt>
+    <dd>
+    Enables money of value 100.
+
+    </ul>
+    <h3>Type:</h3>
+    <ul>
+         <i>bool</i>
+    </ul>
+    <h3>Default:</h3>
+    <ul>
+         <i>false</i>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "value.enable_thousands"></a>
+    <strong>value.enable_thousands</strong>
+    </dt>
+    <dd>
+    Enables money of value 1000.
+
+    </ul>
+    <h3>Type:</h3>
+    <ul>
+         <i>bool</i>
+    </ul>
+    <h3>Default:</h3>
+    <ul>
+         <i>false</i>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "value.money_ones"></a>
+    <strong>value.money_ones</strong>
+    </dt>
+    <dd>
+    Item used for money of value 1.
+
+    </ul>
+    <h3>Type:</h3>
+    <ul>
+         <i>string</i>
+    </ul>
+    <h3>Default:</h3>
+    <ul>
+         <i>value:money_1</i>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "value.money_fives"></a>
+    <strong>value.money_fives</strong>
+    </dt>
+    <dd>
+    Item used for money of value 5.
+
+    </ul>
+    <h3>Type:</h3>
+    <ul>
+         <i>string</i>
+    </ul>
+    <h3>Default:</h3>
+    <ul>
+         <i>value:money_5</i>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "value.money_tens"></a>
+    <strong>value.money_tens</strong>
+    </dt>
+    <dd>
+    Item used for money of value 10.
+
+    </ul>
+    <h3>Type:</h3>
+    <ul>
+         <i>string</i>
+    </ul>
+    <h3>Default:</h3>
+    <ul>
+         <i>value:money_10</i>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "value.money_twenties"></a>
+    <strong>value.money_twenties</strong>
+    </dt>
+    <dd>
+    Item used for money of value 20.
+
+    </ul>
+    <h3>Type:</h3>
+    <ul>
+         <i>string</i>
+    </ul>
+    <h3>Default:</h3>
+    <ul>
+         <i>value:money_20</i>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "value.money_fifties"></a>
+    <strong>value.money_fifties</strong>
+    </dt>
+    <dd>
+    Item used for money of value 50.
+
+    </ul>
+    <h3>Type:</h3>
+    <ul>
+         <i>string</i>
+    </ul>
+    <h3>Default:</h3>
+    <ul>
+         <i>value:money_50</i>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "value.money_hundreds"></a>
+    <strong>value.money_hundreds</strong>
+    </dt>
+    <dd>
+    Item used for money of value 100.
+
+    </ul>
+    <h3>Type:</h3>
+    <ul>
+         <i>string</i>
+    </ul>
+    <h3>Default:</h3>
+    <ul>
+         <i>value:money_100</i>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "value.money_thousands"></a>
+    <strong>value.money_thousands</strong>
+    </dt>
+    <dd>
+    Item used for money of value 1000.
+
+    </ul>
+    <h3>Type:</h3>
+    <ul>
+         <i>string</i>
+    </ul>
+    <h3>Default:</h3>
+    <ul>
+         <i>value:money_1000</i>
+    </ul>
+
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.3</a></i>
+<i style="float:right;">Last updated 2017-08-05 13:21:56 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
