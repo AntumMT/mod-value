@@ -14,18 +14,25 @@
 -- @script init.lua
 
 
-local mod_text = nil
-local mod_conf = io.open(value.modpath .. '/mod.conf', 'r')
-if mod_conf then
-	mod_text = mod_conf.read()
+local conf_exists = false
+local conf_lines = {}
+
+local conf = io.open(value.modpath .. '/mod.conf', 'r')
+if conf then
+	conf:close()
+	conf_exists = true
 end
 
-if mod_text then
-	for i, line in ipairs(string.split(mod_text, '\n')) do
-		-- FIXME: Remove preceding & following whitespace automatically
-		conf_key = string.split(line, ' = ')
-		if #conf_key > 1 then
-			value[conf_key[1]] = conf_key[2]
-		end
+if conf_exists then
+	for line in io.lines(value.modpath .. '/mod.conf') do
+		table.insert(conf_lines, line)
+	end
+end
+
+for i, line in ipairs(conf_lines) do
+	-- FIXME: Remove preceding & following whitespace automatically
+	conf_key = string.split(line, ' = ')
+	if #conf_key > 1 then
+		value[conf_key[1]] = conf_key[2]
 	end
 end
