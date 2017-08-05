@@ -1,0 +1,19 @@
+
+# Sets the number at which item value should be divided to get resell value.
+value.resell_divisor (Resell value divisor) int 2 0
+
+value.enable_ones (Enable money value 1) bool true
+value.enable_fives (Enable money value 5) bool true
+value.enable_tens (Enable money value 10) bool true
+value.enable_twenties (Enable money value 20) bool false
+value.enable_fifties (Enable money value 50) bool false
+value.enable_hundreds (Enable money value 100) bool false
+value.enable_thousands (Enable money value 1000) bool false
+
+value.money_ones (Money item of value 1) string value:money_1
+value.money_fives (Money item of value 5) string value:money_5
+value.money_tens (Money item of value 10) string value:money_10
+value.money_twenties (Money item of value 20) string value:money_20
+value.money_fifties (Money item of value 50) string value:money_50
+value.money_hundreds (Money item of value 100) string value:money_100
+value.money_thousands (Money item of value 1000) string value:money_1000
