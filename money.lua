@@ -30,7 +30,7 @@ for i, v in ipairs(money_values) do
 			core.register_item(money_item, {
 				-- FIXME: Use original name for money
 				description = v[1] .. ' Money',
-				inventory_image = .. 'value_money_' .. v[1] .. '.png',
+				inventory_image = 'value_money_' .. v[1] .. '.png',
 				stack_max = 100,
 			})
 		end
